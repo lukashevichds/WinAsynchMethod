@@ -198,3 +198,36 @@ l'utilisation.
 Choisir une langue
 ![image](https://github.com/user-attachments/assets/cbdefd4e-fc8b-4117-ba37-42026f63098a)
 пришлось изменить названия кнопок на проекте, тк добавить новые, на этот же проект – не получилось
+9. Для свойства Text кнопки Show Date/Time задайте значение
+Afficher la date/l'heure.
+В моем случае, кнопка Choose
+![image](https://github.com/user-attachments/assets/39d7409d-4a7d-4347-b9e9-b252d7f2116a)
+![image](https://github.com/user-attachments/assets/47357cb9-20c6-40c9-adfb-339466c38fec)
+10. Для свойства Text кнопки Show Currency задайте значение
+Afficher la devise.
+В моем случае, кнопка Culture
+![image](https://github.com/user-attachments/assets/f4528ca8-6d40-4163-a46c-cf4cd711d05d)
+11. Для свойства Text кнопки Show a String задайте значение Afficher
+une chaîne.
+А это я уже от себя добавил
+![image](https://github.com/user-attachments/assets/229b0226-8fa4-474c-a7ce-a6338b0a5405)
+12. Для свойства Text кнопки Exit задайте значение Quitter.
+И это тоже
+![image](https://github.com/user-attachments/assets/77329e5e-4051-4484-963c-28b27608248a)
+Добавление в приложение файл строковых ресурсов
+1. В окне Solution Explorer ПКМ по проекту UsabilityDemo | Add |
+Add New Item.
+В моем случае к моему проекту
+Выбираю….
+2. В окне Add New Item выберите Assembly Resource File.
+   ![image](https://github.com/user-attachments/assets/f3a6b2ba-3120-4d30-a12c-4bc2c5fe2545)
+3. Задайте для файла ресурсов имя UsabilityDemoText.fr-FR.resx и
+нажмите на кнопку Open.
+![image](https://github.com/user-attachments/assets/ae690c1d-bc37-480b-b4b6-a5974906bf5a)
+4. В строке ресурсов задайте для Name значение SimpleTextString.
+   ![image](https://github.com/user-attachments/assets/074c5fe4-ceda-435e-a4c9-f1d3c50a500f)
+А вот тут я уже запутался…
+5. В строке ресурсов задайте для Value значение Voici du texte.
+Ничего не получилось, тк я использовал прошлый проект.
+6. Сохраните и закройте файл ресурсов.
+Добавление кода для получения значений строковых
