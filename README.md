@@ -231,3 +231,56 @@ Add New Item.
 Ничего не получилось, тк я использовал прошлый проект.
 6. Сохраните и закройте файл ресурсов.
 Добавление кода для получения значений строковых
+1. Откройте файл с кодом UsabilityDemo.cs.
+В моем случае Form1.cs
+![image](https://github.com/user-attachments/assets/d6f8256d-6bc9-4fba-93b8-4c655a912866)
+2. В окне Task List отобразите комментарии TODO. Для этого
+выберите пункт меню View | Show Tasks | All.
+![image](https://github.com/user-attachments/assets/44db8dff-960d-4e6d-bcab-521c8a428877)
+Ничего не показывает
+3. Добавьте три директивы using, для возможности поддержки
+локализации приложения.
+using System.Globalization;
+using System.Resources;
+using System.Threading;
+![image](https://github.com/user-attachments/assets/a4c63725-77a9-44c4-a80a-44c197ebe63d)
+4. Найдите в коде второй комментарий TODO. Объявите private
+переменную типа ResourceManager.
+private ResourceManager RM;
+Поставил в рандомное место
+![image](https://github.com/user-attachments/assets/b4f664b7-8233-4f02-a567-2c29d745cb6c)
+5. Найдите в коде следующий комментарий TODO. Создайте
+экземпляр класса ResourceManager. Код добавляется в первый
+конструктор приложения:
+RM = new ResourceManager("UsabilityDemo.UsabilityDemoText",
+Assembly.GetExecutingAssembly());
+Его я тоже не нашел, поэтому, поставил наугад
+![image](https://github.com/user-attachments/assets/e8fef6fc-9f43-4330-b3fa-e6a0148517da)
+6. Найдите в коде следующий комментарий TODO. Создайте
+экземпляр класса ResourceManager. Код добавляется во второй
+конструктор приложения:
+RM = new ResourceManager("UsabilityDemo.UsabilityDemoText",
+Assembly.GetExecutingAssembly());
+![image](https://github.com/user-attachments/assets/4ca1ef61-87c1-4292-9f8a-3e1d68114519)
+7. Найдите в коде следующий комментарий TODO. Добавьте код
+использования менеджера ресурсов для получения строки текста из файла
+ресурсов и отображения ее в текстовом поле.
+OutputTextBox.Text = RM.GetString("SimpleTextString");
+Снова поставил в рандомное место
+![image](https://github.com/user-attachments/assets/aa68562c-41e7-441e-b76c-2754167f70cb)
+Поставил запятую, чтобы не обозначалось ошибкой
+8. Найдите в коде следующий комментарий TODO. Добавьте код для
+задания свойствам Culture и UICulture значений, выбранных
+пользователем.
+Thread.CurrentThread.CurrentUICulture = new
+CultureInfo(ChosenCulture, false);
+Thread.CurrentThread.CurrentCulture = new
+CultureInfo(ChosenCulture, false);
+![image](https://github.com/user-attachments/assets/799f9391-47b2-4f24-94a7-23752d64209e)
+Снова запутался
+9. Сохраните проект.
+
+Тестирование работы приложения
+1.	Постройте и запустите приложение.
+![image](https://github.com/user-attachments/assets/7ede287a-ab0e-43de-831e-9f99c9d7edcf)
+Запустил
